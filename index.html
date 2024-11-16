@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for you</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffebef;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff5678;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff5678;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e94b6c;
+        }
+        .heart {
+            position: absolute;
+            animation: float 3s infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-500px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>ดีน้าบคนสวย</h1>
+    <p>กดเข้าไปดูจิ💖</p>
+    <button onclick="startSurprise()">กดด!</button>
+
+    <script>
+        function startSurprise() {
+            alert("จ๊ะเอ๋💕");
+            window.location= "login.html";
+        }
+    </script>
+</body>
+</html>
